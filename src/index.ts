@@ -10,7 +10,7 @@ const obtenerPaises = async() => {
     try {
         const respuestaPeticion = await axios.get('https://restcountries.com/v3.1/all');
         
-        console.log(respuestaPeticion.data.slice(0,5));
+        console.log(respuestaPeticion.data.slice(0,6));
     } catch (error) {
         console.error('Error: ', error);
     }
